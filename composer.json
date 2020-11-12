@@ -1,0 +1,25 @@
+{
+    "name": "yylh/swcontext",
+    "description": "a simple coroutine context manager based on swoole context for swoole framework, just for fun",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "alwayslinger",
+            "email": "alwayslinger@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-swoole": ">=4.3.0"
+    },
+    "require-dev": {
+        "easyswoole/swoole-ide-helper": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Al\\Swow\\": "src/",
+            "Al\\Swow\\Tests\\": "tests"
+        }
+    }
+}

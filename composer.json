@@ -1,6 +1,6 @@
 {
     "name": "yylh/swcontext",
-    "description": "a simple coroutine context manager based on swoole context for swoole framework, just for fun",
+    "description": "A simple coroutine context manager based on swoole context feature for swoole framework",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
@@ -18,8 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Al\\Swow\\": "src/",
-            "Al\\Swow\\Tests\\": "tests"
+            "Al\\Swow\\": "src/"
         }
     }
 }

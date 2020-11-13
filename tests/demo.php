@@ -3,9 +3,9 @@
 include "../vendor/autoload.php";
 
 use Al\Swow\Context;
-use Swoole\Coroutine;
 
 $http = new Swoole\Http\Server("0.0.0.0", 9501);
+
 $http->set([
     'hook_flag' => SWOOLE_HOOK_ALL
 ]);

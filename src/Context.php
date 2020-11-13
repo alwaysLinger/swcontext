@@ -3,15 +3,15 @@
 namespace Al\Swow;
 
 use Swoole\Coroutine;
+use Al\Swow\CtxException;
 
-// 因为swoole是单线程的 因此可以安全使用cid
 class Context
-{
+{   
     public function inCoroutine()
     {
         $throwable = Coroutine::getCid() < 0;
         if ($throwable) {
-            throw new Exception("must called in coroutine context");
+            throw new CtxException('must called in coroutine context'); 
         }
         return true;
     }
